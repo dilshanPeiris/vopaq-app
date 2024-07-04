@@ -1,0 +1,6 @@
+body {
+  color: var(--Vopaq-colors-White, #fff);
+  /* font-family: "Open Sans"; */
+  margin: 0;
+  padding: 0;
+}

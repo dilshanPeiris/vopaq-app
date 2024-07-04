@@ -1,0 +1,265 @@
+/* styles/globals.css */
+/* .bodyCss {
+  font-family: "OpenSans";
+} */
+
+.container {
+  max-width: calc(100% - 0px) !important;
+}
+
+.navbar {
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+
+  padding: 27px 32px;
+
+  color: var(--Vopaq-colors-Gray, #9a9fa0);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+  /* background: rgb(209, 27, 27); */
+}
+
+.navbarLeft {
+  /* width: 44.583vw; */
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.navbarRight {
+  /* width: 44.583vw; */
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-around;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.socialLink {
+  display: flex;
+  /* width: 16px; */
+  /* height: 16px; */
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: var(--vopaq-colors-white-5, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(16px);
+}
+
+.contactEmaildiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  justify-content: center;
+}
+
+.contactEmail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contactEmailIcon {
+  display: flex;
+  /* width: 16px; */
+  /* height: 16px; */
+  padding: 11px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: var(--vopaq-colors-white-5, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(16px);
+}
+
+.contactNumber {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--Vopaq-colors-White, #fff);
+}
+
+.searchGetInTouchBtns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.searchBtn {
+  display: flex;
+  height: 42px;
+  max-width: 123.86px;
+  padding-right: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  border-right: 1px solid #fff;
+  backdrop-filter: blur(15px);
+}
+
+.getInTouchBtn {
+  display: flex;
+  width: 130px;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  color: var(--Vopaq-colors-White, #fff);
+  text-align: center;
+  font-family: Inter;
+  border-radius: 8px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: var(--vopaq-colors-white-5, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(15px);
+}
+
+.navbarToggle {
+  display: none;
+  background: none;
+  position: relative;
+  right: 5px;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 50px;
+  background: aliceblue;
+  height: 30px;
+  padding: auto;
+}
+
+@media (max-width: 1900px) {
+  .navbar {
+    width: -webkit-fill-available;
+  }
+
+  .socialLinks {
+    display: none;
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 1760px) {
+  .navLinks {
+    display: none;
+  }
+
+  .socialLinks {
+    display: none;
+  }
+
+  .contactEmaildiv {
+    display: none;
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 1450px) {
+  .navLinks {
+    display: none;
+  }
+
+  .socialLinks {
+    display: none;
+  }
+
+  .contactEmaildiv {
+    display: none;
+  }
+
+  .searchGetInTouchBtns {
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchGetInTouchBtns {
+    display: none;
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchGetInTouchBtns {
+    /* display: none; */
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .searchGetInTouchBtns {
+    /* display: none; */
+  }
+
+  .navbarToggle {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbarRight {
+    width: auto;
+  }
+}

@@ -1,0 +1,194 @@
+.formContainer {
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35.417vw;
+  /* height: 44.115vw; */
+  padding: 48px;
+
+  gap: 36px;
+
+  border-radius: 18px;
+  background: rgba(25, 25, 26, 0.85);
+}
+
+.formComponent {
+  display: flex;
+  width: 50vw;
+  max-width: 800px;
+  /* padding: 48px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 16px; */
+  /* margin: 32px 0; */
+}
+
+.formTitle {
+  color: var(--Vopaq-colors-White, #fff);
+  font-family: "General Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px; /* 137.5% */
+}
+
+.formGroup {
+  display: flex;
+  width: 31.25vw;
+  max-width: 600px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+  margin-top: 32px;
+  /* background: #fff; */
+  border-radius: 8px;
+  border: none;
+}
+
+.formInput {
+  display: flex;
+  padding: 0px 16px;
+  align-items: flex-start;
+  width: 13.021vw;
+  height: 48px;
+  gap: 10px;
+  /* margin-right: 24px; */
+  border: none;
+  border-radius: 8px;
+  background: var(--Form-text-area-blur, rgba(238, 213, 153, 0.12));
+}
+
+.formGroup textarea {
+  flex: 1;
+  /* margin: 0 5px; */
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  width: 13.021vw;
+  height: 48px;
+  border-radius: 8px;
+  background: var(--Form-text-area-blur, rgba(238, 213, 153, 0.12));
+}
+
+.textarea {
+  resize: none;
+  height: 48px;
+  display: flex;
+  width: 31.25vw;
+  padding: 0px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 8px;
+  background: var(--Form-text-area-blur, rgba(238, 213, 153, 0.12));
+}
+
+.submitButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 16px; */
+  width: 30.729vw;
+  margin-top: 36px;
+}
+
+.button {
+  display: flex;
+  width: 160px;
+  max-width: 800px;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--Vopaq-colors-White, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 93.75% */
+
+  border-radius: 8px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: rgba(12, 30, 33, 0.8);
+  backdrop-filter: blur(15px);
+}
+
+.button:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+
+  .formTitle{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .formContainer {
+    width: 80vw;
+  }
+
+  .formGroup {
+    width: 60vw;
+    margin-top: 12px;
+    height: 32px;
+  }
+
+  .submitButton {
+    width: 49vw;
+  }
+
+  .formComponent {
+    gap: 0px;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .formInput {
+    width: 28vw;
+    height: 32px;
+  }
+
+  .textarea {
+    width: -webkit-fill-available;
+    height: 32px;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  .formTitle{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .formContainer {
+    width: 85vw;
+    padding: 24px;
+  }
+
+  .formGroup {
+    width: 70vw;
+    height: 32px;
+  }
+
+  .formInput {
+    width: 32vw;
+    height: 32px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+}

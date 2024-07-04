@@ -1,0 +1,256 @@
+.container {
+  max-width: calc(100% - 0px) !important;
+  overflow-x: hidden;
+  width: max-content;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mainContainer {
+  /* width: 100vw; */
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* align-items: center; */
+}
+
+.subContainerLeft {
+  width: 50vw;
+  background-color: #19191a;
+
+  display: flex;
+  /* width: 960px; */
+  height: 1198px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleText {
+  display: flex;
+  /* width: 768px; */
+  height: 483px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  /* background-color: aqua; */
+  padding: 32px 96px;
+}
+
+.titleTextPartOne {
+  color: #9a9fa0;
+  color: var(--Vopaq-colors-Gray, #9a9fa0);
+
+  font-family: "Open Sans";
+  font-size: 115px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128px; /* 111.304% */
+}
+
+.titleTextPartTwo {
+  color: var(--Vopaq-colors-White, #fff);
+
+  font-family: "Open Sans";
+  font-size: 115px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128px;
+}
+
+.heroDescription {
+  align-self: stretch;
+  padding: 32px 0;
+}
+
+.heroDescriptionText {
+  color: var(--Vopaq-colors-Gray, #9a9fa0);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 150% */
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 0px 24px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.buttonOne {
+  color: var(--Vopaq-colors-Primary-Green, #19191a);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 93.75% */
+  padding: 16px 20px;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--Foundation-Yellow-yellow-500, #e6c068);
+  backdrop-filter: blur(15px);
+}
+
+.buttonTwo {
+  color: var(--Vopaq-colors-Primary-Green, #19191a);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 93.75% */
+  padding: 16px 20px;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: var(--Vopaq-colors-White, #fff);
+  backdrop-filter: blur(15px);
+}
+
+.subContainerRight {
+  width: 50vw;
+  background-color: #19191a;
+
+  background-image: url("../resources/images/hero-1.png");
+  background-repeat: no-repeat;
+  background-size: 960px 1203px;
+  height: 1198px;
+  display: flex;
+  /* width: 960px; */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .subContainerRight {
+    display: none;
+  }
+  .subContainerLeft {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .subContainerLeft {
+    width: 100vw;
+    height: 100vh;
+    padding: 40vw 0;
+  }
+
+  .titleText {
+    margin-top: 7vw;
+  }
+
+  .titleTextPartOne,
+  .titleTextPartTwo {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .heroDescriptionText {
+    font: size 14px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .subContainerLeft {
+    width: 100vw;
+    height: fit-content;
+    padding: 40vw 0;
+  }
+
+  .titleText {
+    margin-top: 20vw;
+  }
+
+  .titleTextPartOne,
+  .titleTextPartTwo {
+    font-size: 70px;
+    line-height: 90px;
+  }
+
+  .heroDescriptionText {
+    font: size 14px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: calc(100% - 0px) !important;
+  }
+
+  .titleText {
+    padding: 24px 64px;
+  }
+
+  .titleTextPartOne,
+  .titleTextPartTwo {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .heroDescriptionText {
+    font: size 14px;
+    line-height: 30px;
+  }
+
+  .heroButtons {
+    justify-content: space-between;
+  }
+
+  .buttonOne,
+  .buttonTwo {
+    max-width: 120px;
+    font-size: 12px;
+    padding: 12px 2px;
+  }
+}
+
+@media (max-width: 375px), (max-width: 320px) {
+  .container {
+    max-width: calc(100% - 0px) !important;
+  }
+
+  .titleText {
+    padding: 32px;
+  }
+
+  .titleTextPartOne,
+  .titleTextPartTwo {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .heroDescriptionText {
+    font: size 14px;
+    line-height: 30px;
+  }
+
+  .heroButtons {
+    justify-content: space-between;
+  }
+
+  .buttonOne,
+  .buttonTwo {
+    max-width: 120px;
+    font-size: 12px;
+    padding: 12px 2px;
+  }
+}

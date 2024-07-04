@@ -1,0 +1,257 @@
+.inqurySection {
+  background: url("../resources/images/inquire.png") no-repeat;
+}
+
+.overlay {
+  background: rgba(39, 39, 39, 0.719);
+}
+
+.container {
+  max-width: calc(100% - 320px) !important;
+}
+
+.inquiryMainContainer {
+  width: 100vw;
+  /* height: 100vw; */
+}
+
+.subContainer {
+  /* width: 100vw; */
+  height: 847px;
+  /* padding: 68px 0; */
+  display: flex;
+  align-items: center;
+}
+
+.subContainerLeft {
+  /* width: 50vw; */
+  /* background: yellow; */
+  display: flex;
+  padding: 66.82px 0px 66.8px 0px;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.subContainerSubTitleText {
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: var(--vopaq-colors-white-5, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(16px);
+  margin-bottom: 24px;
+}
+
+.subContainerTitleText {
+  color: var(--Vopaq-colors-Gray, #9a9fa0);
+  text-align: center;
+
+  font-family: Inter;
+  font-size: 60.375px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70.4px; /* 116.605% */
+  margin-bottom: 28px;
+}
+
+.subContainerDescription {
+  color: var(--Description, #c6d2d2);
+  text-align: center;
+  width: 30.156vw;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 150% */
+  margin-bottom: 48px;
+}
+
+.caseStudyButtons {
+  display: flex;
+  /* padding: 0px 283.84px; */
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.buttonOne {
+  display: flex;
+  min-width: 125px;
+  max-width: 800px;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  background: var(--Foundation-Yellow-yellow-500, #e6c068);
+}
+
+.buttonTwo {
+  display: flex;
+  min-width: 125px;
+  max-width: 800px;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: var(--vopaq-colors-white-5, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(15px);
+}
+
+.subContainerRight {
+  /* width: 50vw; */
+  height: 50vh;
+  /* background: #788c91; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1760px) {
+  .subContainerLeft {
+    align-items: flex-start;
+  }
+
+  .subContainerDescription {
+    text-align: left;
+  }
+
+  .caseStudyButtons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: calc(100% - 160px) !important;
+  }
+  .subContainerRight {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .inqurySection {
+    background-color: none;
+    /* height: 100vw; */
+    background-size: contain;
+    margin-bottom: 100px;
+  }
+  .container {
+    max-width: calc(100% - 160px) !important;
+  }
+  .subContainer {
+    flex-direction: column;
+  }
+
+  .subContainerSubTitleText {
+    width: fit-content;
+  }
+
+  .subContainerTitleText {
+    margin-bottom: 0;
+    font-size: 45px;
+  }
+
+  .subContainerLeft {
+    justify-content: space-between;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: baseline;
+    /* gap: 60px; */
+    width: -webkit-fill-available;
+    padding-top: 24px;
+  }
+
+  .subContainerTitleInformationCard {
+    flex-direction: column;
+  }
+
+  .subContainerInformationCard {
+    flex-direction: column;
+  }
+
+  .subContainerDescription {
+    text-align: justify;
+    width: auto;
+    margin-bottom: 18px;
+    margin-top: 12px;
+  }
+
+  .subContainerRight {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .subContainer {
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 24px;
+  }
+
+  .buttonOne,
+  .buttonTwo {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .subContainerRight {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 425px), (max-width: 375px), (max-width: 320px) {
+  .container {
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .subContainerSubTitleText {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-bottom: 8px;
+  }
+
+  .subContainerTitleText {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subContainerTitleInformationCard {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
+
+  .subContainerLeft {
+    padding-top: 4px;
+  }
+
+  .subContainerRight {
+    height: fit-content;
+  }
+
+  .subContainerInformationCard {
+    width: -webkit-fill-available;
+  }
+
+  .subContainerDescription {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    margin-top: 0;
+  }
+
+  .buttonOne,
+  .buttonTwo {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}

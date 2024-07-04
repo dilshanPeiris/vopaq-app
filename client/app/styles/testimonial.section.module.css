@@ -1,0 +1,439 @@
+.testimonialSection {
+  background: url("../resources/images/testimonial.png") lightgray 50% / cover
+    no-repeat;
+}
+
+.overlay {
+  background: rgba(22, 22, 22, 0.623);
+}
+
+.container {
+  max-width: calc(100% - 192px) !important;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(226, 7, 7); */
+  display: flex;
+  /* margin: 4.79vw 0 4.79vw 0; */
+}
+
+.subContainer {
+  display: flex;
+  /* width: 100vw; */
+  /* padding: 96px; */
+  align-items: center;
+  /* gap: 268px; */
+
+  /* opacity: 0.6; */
+  /* background: hsla(189, 47%, 9%, 0.61); */
+}
+
+.subContainerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 31.25vw; */
+  height: 50vh;
+  /* background-color: rgb(68, 78, 78); */
+  padding-right: 268px;
+  gap: 16px;
+}
+
+.subContainerLeftTitle {
+  color: var(--Vopaq-colors-White, #fff);
+  font-family: Inter;
+  font-size: 77.188px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px; /* 103.644% */
+}
+
+.subContainerLeftDescription {
+  color: var(--Vopaq-colors-White, #fff);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 150% */
+}
+
+.subContainerRight {
+  width: 44.792vw;
+  /* height: 80vh; */
+  /* background-color: rgb(27, 124, 124); */
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.testimonyCards {
+  /* width: 45vw; */
+  /* background-color: rgb(27, 124, 124); */
+  /* height: 34.271vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 53px; */
+}
+
+.testimonyCardRowOne {
+  /* background-color: #16bb3f; */
+  /* width: 45vw; */
+  /* height: 20vh; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
+}
+
+.testimonyCardRowTwo {
+  /* background-color: #16bb3f; */
+  /* width: 45vw; */
+  /* height: 20vh; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.testimonyCardRowThree {
+  /* background-color: #c7dacc; */
+  /* width: 45vw; */
+  /* height: 20vh; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonyCard {
+  /* width: 17.4vw; */
+  /* height: 11vh; */
+  /* background: #c562ff; */
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--vopaq-colors-white-12, rgba(255, 255, 255, 0.12));
+  background: rgba(12, 30, 33, 0.25);
+
+  backdrop-filter: blur(3px);
+}
+
+.testimonyInfo {
+  display: flex;
+  gap: 16px;
+}
+
+.testimonyReviewerProfileImage {
+  width: 50px;
+  height: 50px;
+  max-width: 351.97px;
+  border-radius: 500px;
+  border: 2px solid var(--Vopaq-colors-White, #fff);
+  background: url("../resources/images/case-profile.png") lightgray -12.481px 0px /
+    149.925% 100% no-repeat;
+}
+
+@media (max-width: 1900px) {
+  .subContainerLeft {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1540px) {
+  .subContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subContainerLeft {
+    width: 80vw;
+    padding-right: 0;
+    height: 20vw;
+    /* margin-bottom: 10vw; */
+  }
+  .subContainerRight {
+    width: 80vw;
+    padding-right: 0;
+    /* height: 20vw; */
+    margin-bottom: 10vw;
+    justify-content: center;
+  }
+  .testimonyCard {
+    min-width: 20vw;
+    max-width: 38vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: calc(100% - 160px) !important;
+    /* border: 1px solid black; */
+  }
+
+  .subContainerLeft {
+    margin-bottom: 10vw;
+  }
+
+  .testimonyCardRowOne {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonyCards {
+    /* margin-top: 50vh; */
+    height: 40vh;
+  }
+  .subContainer {
+    height: 40vh;
+  }
+
+  .testimonialSection {
+    margin-top: 96px;
+    height: 90vh;
+  }
+
+  .mainContainer {
+    height: 90vh;
+  }
+  .subContainerLeftTitle {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .subContainerLeftDescription {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .subContainerRight {
+    height: 40vh;
+    align-items: flex-start;
+  }
+
+  .testimonyCard {
+    /* display: none; */
+    max-width: -webkit-fill-available;
+  }
+
+  .testimonyReviewDetails {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyInfo {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyCardRowOne {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #f15454; */
+  }
+
+  .testimonyCardRowTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #30b8a6; */
+  }
+
+  .testimonyCardRowThree {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #3cdd0b; */
+  }
+}
+
+@media (max-width: 425px), (max-width: 375px) {
+  .container {
+    max-width: calc(100% - 24px) !important;
+  }
+  .testimonyCards {
+    /* margin-top: 50vh; */
+    height: 40vh;
+  }
+  .subContainer {
+    height: 65vh;
+  }
+
+  .testimonialSection {
+    margin-top: 96px;
+    height: 90vh;
+  }
+
+  .mainContainer {
+    height: 90vh;
+  }
+
+  .subContainerLeft {
+    height: 50vw;
+    align-items: flex-start;
+    padding: 24px 0;
+    margin-bottom: 0;
+    text-align: center;
+    /* background: #c91111; */
+  }
+
+  .subContainerLeftTitle {
+    font-size: 24px;
+    line-height: 36px;
+    width: -webkit-fill-available;
+  }
+
+  .subContainerLeftDescription {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    width: -webkit-fill-available;
+  }
+
+  .testimonyCard {
+    /* display: none; */
+    max-width: -webkit-fill-available;
+  }
+
+  .subContainerRight {
+    /* height: 50vh; */
+    padding-top: 0;
+  }
+
+  .subContainerRight::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonyReviewDetails {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyInfo {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyCardRowOne {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #f15454; */
+  }
+
+  .testimonyCardRowTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #30b8a6; */
+  }
+
+  .testimonyCardRowThree {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #3cdd0b; */
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: calc(100% - 0px) !important;
+  }
+
+  .subContainer {
+    height: 90vh;
+    /* background: #c51717; */
+  }
+
+  .testimonialSection {
+    margin-top: 96px;
+  }
+
+  .mainContainer {
+    height: 90vh;
+  }
+
+  .subContainerLeft {
+    height: 50vw;
+    align-items: flex-start;
+    padding: 24px 0;
+    margin-bottom: 0;
+    /* background: #c91111; */
+  }
+
+  .subContainerLeftTitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subContainerLeftDescription {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 24px;
+  }
+
+  .testimonyCard {
+    /* display: none; */
+    max-width: -webkit-fill-available;
+  }
+
+  .subContainerRight {
+    /* height: 20vh; */
+    padding-top: 0;
+    /* background: #5acc3786; */
+  }
+
+  .subContainerRight::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonyCards {
+    display: flex !important;
+    flex-direction: column;
+    /* flex-wrap: wrap !important; */
+    /* margin-top: 2vh; */
+    margin-top: 0;
+    /* height: 60vh; */
+  }
+
+  .testimonyReviewDetails {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyInfo {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonyCardRowOne {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #f15454; */
+  }
+
+  .testimonyCardRowTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #30b8a6; */
+  }
+
+  .testimonyCardRowThree {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background: #3cdd0b; */
+  }
+}
